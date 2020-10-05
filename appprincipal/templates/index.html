@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div>
+
+    <h4>Historico de dados ANAC 2015-2019</h4>
+</div>
+
+<table class="table table-hover">
+    <thead>
+Historico de Voos 2015-2019
+    </thead>
+
+    <tbody>
+
+        {% for item in items %}
+
+        <tr>
+            <td>{{ item.pk }}
+            <td>{{ item.sigla }}</td>
+            <td>{{ item.numVoo }}</td>
+            <td>{{ item.status }}</td>
+            <td>{{ item.tipoLinha }}</td>
+            
+            <td>{{ item.origem }}</td>
+            <td>{{ item.destino }}</td>
+
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
