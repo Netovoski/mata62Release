@@ -1,7 +1,7 @@
 from projpad.models import *
 from django import forms
 from django.forms import ModelForm
-from .models import *
+from projpad.models import *
 
 class HistForm(forms.ModelForm):
     class Meta:

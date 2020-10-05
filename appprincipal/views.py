@@ -3,8 +3,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 # Create your views here.
 from django.urls import reverse_lazy,reverse
 from django.http import HttpResponse, JsonResponse
-from .models import *
-from appprincipal import views
+from projpad.models import *
+
 from appprincipal.forms import *
 from .forms import *
 from projpad.models import *

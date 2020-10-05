@@ -13,7 +13,7 @@
 <body>
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'index' %}">Historico de Voos 2015-2019</a>
+        <a class="navbar-brand" href="{% url 'appprincipal:index' %}">Historico de Voos 2015-2019</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
             aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'appprincipal:index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'historico_2015' %}">2015</a>
+                    <a class="nav-link" href="{% url 'appprincipal:historico_2015' %}">2015</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'historico_2016' %}">2016</a>
+                    <a class="nav-link" href="{% url 'appprincipal:historico_2016' %}">2016</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'historico_2017' %}">2017</a>
+                    <a class="nav-link" href="{% url 'appprincipal:historico_2017' %}">2017</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">2018</a>
