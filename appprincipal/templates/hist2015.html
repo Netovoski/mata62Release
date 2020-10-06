@@ -34,9 +34,9 @@
             <th>Num. Voo</th>
             <th>Status</th>
             <th>Tipo de Linha</th>
-            <th>Origem</th>
+            <th>Data</th>
             <th>Destino</th>
-            <th></th>
+            <th>Origem</th>
         </tr>
     </thead>
 
@@ -48,8 +48,9 @@
             <td>{{ item.pk }}
             <td>{{ item.sigla }}</td>
             <td>{{ item.numVoo }}</td>
-            <td>{{ item.status }}</td>
+            <td>{{ item.situacao }}</td>
             <td>{{ item.tipoLinha }}</td>
+            <td>{{ item.data_real }}</td>
             <td>{{ item.origem }}</td>
             <td>{{ item.destino }}</td>
 

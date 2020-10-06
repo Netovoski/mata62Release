@@ -1,5 +1,5 @@
-#from core.views import LocaisList, IndexTemplateView, LocalDetailView, RegCreateView, Pt1CreateView
 from django.conf.urls import url
+from django.urls import path
 from appprincipal.views import *
 
 app_name = 'appprincipal'
@@ -22,6 +22,9 @@ urlpatterns = [
     url(r'^hist_2016_2$', Hist_2016_2, name="historico_2016_2"),
     url(r'^hist_2016_3$', Hist_2016_3, name="historico_2016_3"),
     url(r'^hist_2017_1$', Hist_2017_1, name="historico_2017"),
+    #url(r'^pie-chart$', pie_chart, name="pie-chart"),
+    #url(r'^situacao_sigla$', hist_2015_view, name="hist_2015_view"),
+    url(r'^historico/$', historico, name='historico'),
 
 
     

@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'appprincipal',
     'ckeditor',
     'import_export',
+    'chartjs',
+
 ]
 
 MIDDLEWARE = [
@@ -106,6 +108,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+]
+
+THIRD_PARTY_APPS = []
+
+LOCAL_APPS = [
+    'chart',
 ]
 
 

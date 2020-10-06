@@ -1,13 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
-
+import json
 # Create your views here.
 from django.urls import reverse_lazy,reverse
 from django.http import HttpResponse, JsonResponse
 from projpad.models import *
-
+from django.db.models import Sum
 from appprincipal.forms import *
 from .forms import *
 from projpad.models import *
+#from chartit import DataPool, Chart, PivotDataPool, PivotChart
 
 def index(request):
     return render(request, 'index.html')
@@ -101,14 +102,25 @@ def Hist_2015_11(request):
     }
     return render(request, 'hist2015.html', context) 
 
-def Hist_2015_12(Hist_2015_1):
-    item = Hist_voo2015_11.objects.all()    
+def Hist_2015_12(request):
+    item = Hist_voo2015_12.objects.all()    
     context = {
         'item': item,
         'header': 'Historico 2015 Dezembro',
     }
     return render(request, 'hist2015.html', context) 
 
+def historico(request):
+    queryset = Hist_voo2015.objects.all()
+    sigla = [obj.sigla for obj in queryset]
+    situacao = [obj.situacao for obj in queryset]
+
+    context = {
+        'sigla': json.dumps(sigla),
+        'situacao': json.dumps(situacao),
+    }
+    return render(request, 'historico.html', context)
+    
 
 def Hist_2016_1(request):
     item = Hist_voo2016.objects.all()

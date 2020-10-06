@@ -7,18 +7,18 @@ from django.utils import timezone
 class Historico(models.Model):
 
     sigla = models.CharField(max_length=4, blank=False)
-    numVoo = models.CharField(max_length=200, null=True)
+    numVoo = models.PositiveIntegerField(null=True)
 
     choices = (
         ('Realizada', 'Viagem Realizada'),
         ('Cancelada', 'Viagem Cancelada'),
     )
 
-    status = models.CharField(max_length=10, choices=choices, default='Sem conhecimento')
+    situacao = models.CharField(max_length=10, choices=choices, default='Sem conhecimento')
     tipoLinha = models.CharField(max_length=50, default="Sem Dados")
-    data_prevista = models.CharField(max_length=50)
-    origem = models.CharField(max_length=50, null=False,blank=False)
-    destino = models.CharField(max_length=50, null=False,blank=False)
+    data_real = models.DateTimeField(null=True)
+    origem = models.CharField(max_length=100, null=False,blank=False)
+    destino = models.CharField(max_length=100, null=False,blank=False)
 
     class Meta:
         abstract = True
