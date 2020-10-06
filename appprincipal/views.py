@@ -152,3 +152,4 @@ def Hist_2017_1(request):
         'header': 'Historico 2017 Janeiro',
     }
     return render(request, 'hist2017.html', context)
+
