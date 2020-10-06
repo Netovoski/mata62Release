@@ -23,94 +23,94 @@ def Hist_2015_1(request):
     return render(request, 'hist2015.html', context)
 
 
-def Hist_2015_2(request):
-    item = Hist_voo2015_2.objects.all()
+def Hist_2015_2(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Fevereiro',
     }
-    return render(request, 'hist2015.html', context)
+    return render(Hist_2015_1, 'hist2015.html', context)
 
 
-def Hist_2015_3(request):
-    item = Hist_voo2015_3.objects.all()
+def Hist_2015_3(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Março',
     }
-    return render(request, 'hist2015.html', context)
+    return render(Hist_2015_1, 'hist2015.html', context)
 
-def Hist_2015_4(request):
-    item = Hist_voo2015_4.objects.all()
+def Hist_2015_4(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Abril',
     }
-    return render(request, 'hist2015.html', context) 
+    return render(Hist_2015_1, 'hist2015.html', context) 
 
-def Hist_2015_5(request):
-    item = Hist_voo2015_5.objects.all()
+def Hist_2015_5(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Maio',
     }
-    return render(request, 'hist2015.html', context) 
+    return render(Hist_2015_1, 'hist2015.html', context) 
 
-def Hist_2015_6(request):
-    item = Hist_voo2015_6.objects.all()
+def Hist_2015_6(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 junho',
     }
-    return render(request, 'hist2015.html', context) 
+    return render(Hist_2015_1, 'hist2015.html', context) 
 
-def Hist_2015_7(request):
-    item = Hist_voo2015_7.objects.all()
+def Hist_2015_7(Hist_2015_1):
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Julho',
     }
-    return render(request, 'hist2015.html', context) 
+    return render(Hist_2015_1, 'hist2015.html', context) 
 
 def Hist_2015_8(request):
-    item = Hist_voo2015_8.objects.all()
+    pass
     context = {
         'item': item,
         'header': 'Historico 2015 Agosto',
     }
-    return render(request, 'hist2015.html', context) 
+    return render(Hist_2015_1, 'hist2015.html', context) 
 
-def Hist_2015_9(request):
-    item = Hist_voo2015_9.objects.all()
-    context = {
-        'item': item,
-        'header': 'Historico 2015 Setembro',
-    }
-    return render(request, 'hist2015.html', context) 
+# def Hist_2015_9(request):
+#     item = Hist_voo2015_9.objects.all()
+#     context = {
+#         'item': item,
+#         'header': 'Historico 2015 Setembro',
+#     }
+#     return render(request, 'hist2015.html', context) 
 
-def Hist_2015_10(request):
-    item = Hist_voo2015_10.objects.all()
-    context = {
-        'item': item,
-        'header': 'Historico 2015 Outubro',
-    }
-    return render(request, 'hist2015.html', context) 
+# def Hist_2015_10(request):
+#     item = Hist_voo2015_10.objects.all()
+#     context = {
+#         'item': item,
+#         'header': 'Historico 2015 Outubro',
+#     }
+#     return render(request, 'hist2015.html', context) 
 
-def Hist_2015_11(request):
-    item = Hist_voo2015_11.objects.all()
-    context = {
-        'item': item,
-        'header': 'Historico 2015 Novembro',
-    }
-    return render(request, 'hist2015.html', context) 
+# def Hist_2015_11(request):
+#     item = Hist_voo2015_11.objects.all()
+#     context = {
+#         'item': item,
+#         'header': 'Historico 2015 Novembro',
+#     }
+#     return render(request, 'hist2015.html', context) 
 
-def Hist_2015_12(request):
-    item = Hist_voo2015_12.objects.all()    
-    context = {
-        'item': item,
-        'header': 'Historico 2015 Dezembro',
-    }
-    return render(request, 'hist2015.html', context) 
+# def Hist_2015_12(request):
+#     item = Hist_voo2015_12.objects.all()    
+#     context = {
+#         'item': item,
+#         'header': 'Historico 2015 Dezembro',
+#     }
+#     return render(request, 'hist2015.html', context) 
 
 # def historico(request):
 #     queryset = Hist_voo2015.objects.all()
