@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
- <div class="add_buttons">
+<div class="add_buttons">
 
     <div class="button-group">
         <a href="{% url 'appprincipal:historico_2015' %}" class="btn btn-primary btn-md btn-trim" role="button"> Janeiro</a>
@@ -18,7 +18,7 @@
         <a href="{% url 'appprincipal:historico_2015_12' %}" class="btn btn-primary btn-md btn-trim" role="button"> Dezembro</a>
     </div>
 
-  </div>
+</div>
 
 
 <div>
@@ -34,23 +34,23 @@
             <th>Num. Voo</th>
             <th>Status</th>
             <th>Tipo de Linha</th>
-            <th>Data</th>
-            <th>Destino</th>
             <th>Origem</th>
+            <th>Destino</th>
+            <th></th>
         </tr>
     </thead>
 
     <tbody>
-    
-        {% for item in item %}
+
+        {% for item in items %}
 
         <tr>
             <td>{{ item.pk }}
             <td>{{ item.sigla }}</td>
             <td>{{ item.numVoo }}</td>
-            <td>{{ item.situacao }}</td>
+            <td>{{ item.status }}</td>
             <td>{{ item.tipoLinha }}</td>
-            <td>{{ item.data_real }}</td>
+
             <td>{{ item.origem }}</td>
             <td>{{ item.destino }}</td>
 

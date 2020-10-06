@@ -13,6 +13,7 @@ from projpad.models import *
 def index(request):
     return render(request, 'index.html')
 
+
 def Hist_2015_1(request):
     item = Hist_voo2015.objects.all()
     context = {
@@ -20,6 +21,7 @@ def Hist_2015_1(request):
         'header': 'Historico 2015 Janeiro',
     }
     return render(request, 'hist2015.html', context)
+
 
 def Hist_2015_2(request):
     item = Hist_voo2015_2.objects.all()

@@ -9,11 +9,6 @@ class HistForm(forms.ModelForm):
         model = Hist_voo2015
         fields = ['sigla', 'numVoo', 'situacao', 'tipoLinha',  'origem', 'destino']
 
-class HistForm(forms.ModelForm):
-    class Meta:
-        model = Hist_voo2015_2
-        fields = ['sigla', 'numVoo', 'situacao', 'tipoLinha',  'origem', 'destino']
-
 class HistForm2016(forms.ModelForm):
     class Meta:
         model = Hist_voo2016
