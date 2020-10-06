@@ -65,7 +65,7 @@ ROOT_URLCONF = 'projpad.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['appprincipal.templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
