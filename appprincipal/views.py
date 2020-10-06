@@ -110,16 +110,16 @@ def Hist_2015_12(request):
     }
     return render(request, 'hist2015.html', context) 
 
-def historico(request):
-    queryset = Hist_voo2015.objects.all()
-    sigla = [obj.sigla for obj in queryset]
-    situacao = [obj.situacao for obj in queryset]
+# def historico(request):
+#     queryset = Hist_voo2015.objects.all()
+#     sigla = [obj.sigla for obj in queryset]
+#     situacao = [obj.situacao for obj in queryset]
 
-    context = {
-        'sigla': json.dumps(sigla),
-        'situacao': json.dumps(situacao),
-    }
-    return render(request, 'historico.html', context)
+#     context = {
+#         'sigla': json.dumps(sigla),
+#         'situacao': json.dumps(situacao),
+#     }
+#     return render(request, 'historico.html', context)
     
 
 def Hist_2016_1(request):
