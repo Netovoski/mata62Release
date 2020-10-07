@@ -20,8 +20,6 @@ class Historico(models.Model):
     origem = models.CharField(max_length=100, null=False,blank=False)
     destino = models.CharField(max_length=100, null=False,blank=False)
 
-    class Meta:
-        abstract = True
 
     def __str__(self):
         return 'Sigla: {0} numVoo: {1}'.format(self.sigla, self.numVoo)
@@ -79,3 +77,12 @@ class Hist_voo2018(Historico):
 
 class Hist_voo2019(Historico):
     pass
+
+from django.db import models
+
+
+class Order(models.Model):
+    product_category = models.CharField(max_length=20)
+    payment_method = models.CharField(max_length=50)
+    shipping_cost = models.CharField(max_length=50)
+    unit_price = models.DecimalField(max_digits=5, decimal_places=2)
